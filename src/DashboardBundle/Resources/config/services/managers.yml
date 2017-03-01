@@ -1,0 +1,9 @@
+parameters:
+    # manager
+    game_dashboard.game.manager.class: DashboardBundle\Manager\GameManager
+    game_dashboard.file.path: uploads/games
+
+services:
+    game_dashboard.game.manager:
+        class: "%game_dashboard.game.manager.class%"
+        arguments: ["@doctrine.orm.entity_manager", "@knp_paginator", "%game_dashboard.game.class%", "%game_dashboard.file.path%"]

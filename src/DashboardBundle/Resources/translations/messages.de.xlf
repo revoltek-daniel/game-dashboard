@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="de" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="dashboard.title">
+                <source>dashboard.title</source>
+                <target>Game Dashboard</target>
+            </trans-unit>
+
+            <trans-unit id="game_dashboard.back">
+                <source>game_dashboard.back</source>
+                <target>zurück</target>
+            </trans-unit>
+            <trans-unit id="game_dashboard.list.create.new">
+                <source>game_dashboard.list.create.new</source>
+                <target>Create new Game</target>
+            </trans-unit>
+
+            <trans-unit id="game_dashboard.admin.nav.game">
+                <source>game_dashboard.admin.nav.game</source>
+                <target>Games</target>
+            </trans-unit>
+            <trans-unit id="game_dashboard.admin.nav.start">
+                <source>game_dashboard.admin.nav.start</source>
+                <target>Game starten</target>
+            </trans-unit>
+            <trans-unit id="game_dashboard.admin.nav.index">
+                <source>game_dashboard.admin.nav.index</source>
+                <target>Dashboard</target>
+            </trans-unit>
+
+            <trans-unit id="dashboard.game.form.name.label">
+                <source>dashboard.game.form.name.label</source>
+                <target>Name</target>
+            </trans-unit>
+            <trans-unit id="dashboard.game.start">
+                <source>dashboard.game.start</source>
+                <target>Start</target>
+            </trans-unit>
+            <trans-unit id="dashboard.game.isrunning">
+                <source>dashboard.game.isrunning</source>
+                <target>Spiel läuft bereits</target>
+            </trans-unit>
+            <trans-unit id="dashboard.game.isnotrunning">
+                <source>dashboard.game.isnotrunning</source>
+                <target>Spiel wurde noch nicht gestartet</target>
+            </trans-unit>
+            <trans-unit id="dashboard.game.started">
+                <source>dashboard.game.started</source>
+                <target>Spiel gestartet</target>
+            </trans-unit>
+            <trans-unit id="dashboard.game.stopped">
+                <source>dashboard.game.stopped</source>
+                <target>Spiel gestoppt</target>
+            </trans-unit>
+            <trans-unit id="dashboard.game.stop">
+                <source>dashboard.game.stop</source>
+                <target>Stop</target>
+            </trans-unit>
+
+            <trans-unit id="dashboard.game.form.starttype.0">
+                <source>dashboard.game.form.starttype.0</source>
+                <target>Konsole</target>
+            </trans-unit>
+            <trans-unit id="dashboard.game.form.starttype.label">
+                <source>dashboard.game.form.starttype.label</source>
+                <target>Start type</target>
+            </trans-unit>
+            <trans-unit id="dashboard.game.form.starttype.1">
+                <source>dashboard.game.form.starttype.1</source>
+                <target>Knockd</target>
+            </trans-unit>
+            <trans-unit id="dashboard.game.form.description.label">
+                <source>dashboard.game.form.description.label</source>
+                <target>Beschreibung</target>
+            </trans-unit>
+            <trans-unit id="dashboard.game.form.start.label">
+                <source>dashboard.game.form.start.label</source>
+                <target>Start Command</target>
+            </trans-unit>
+            <trans-unit id="dashboard.game.form.shutdown.label">
+                <source>dashboard.game.form.shutdown.label</source>
+                <target>Shutdown Command</target>
+            </trans-unit>
+            <trans-unit id="dashboard.game.form.running.label">
+                <source>dashboard.game.form.running.label</source>
+                <target>Running Check Command</target>
+            </trans-unit>
+            <trans-unit id="dashboard.game.form.logo.label">
+                <source>dashboard.game.form.logo.label</source>
+                <target>Logo</target>
+            </trans-unit>
+            <trans-unit id="dashboard.game.form.maxplayers.label">
+                <source>dashboard.game.form.maxplayers.label</source>
+                <target>Max. Spieler</target>
+            </trans-unit>
+            <trans-unit id="dashboard.game.form.save.label">
+                <source>dashboard.game.form.save.label</source>
+                <target>Speichern</target>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,28 @@
+{% extends '@Dashboard/baseLayout.html.twig' %}
+
+{% block main %}
+      <table>
+        <tr>
+            <th{% if pagination.isSorted('e.active') %} class="sorted"{% endif %}>{{ knp_pagination_sortable(pagination, 'Name', 'e.active') }}</th>
+            <th>{{ 'dashboard.game.form.starttype.label'|trans }}</th>
+            <th>Edit</th>
+        </tr>
+
+        {% for game in pagination %}
+            <tr {% if loop.index is odd %}class="color"{% endif %}>
+                <td>{{ game.name }}</td>
+                <td>{{ ('dashboard.game.form.starttype.' ~ game.starttype )|trans }}</td>
+                <td>
+                    <a href="{{ path('game_dashboard_game_edit', {'gameId': game.id}) }}" >
+                        <i class="fa fa-pencil-square-o"></i> Edit
+                    </a>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+    <div class="navigation">
+        {{ knp_pagination_render(pagination) }}
+    </div>
+    <br>
+    <a href="{{ path('game_dashboard_game_new') }}"><i class="fa fa-plus"></i> {{ 'game_dashboard.list.create.new'|trans }}</a> <br>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends '@Dashboard/baseLayout.html.twig' %}
+
+{% block main %}
+    {% for flashMessage in app.session.flashbag.get('error') %}
+        <div class="notice error"><i class="fa fa-remove fa-large"></i>{{ flashMessage|trans }}</div>
+    {% endfor %}
+
+    {% for flashMessage in app.session.flashbag.get('success') %}
+        <div class="notice success"><i class="fa fa-check fa-large"></i>{{ flashMessage|trans }}</div>
+    {% endfor %}
+
+        <div class="grid flex">
+    {% for game in pagination %}
+        <div class="col_6">
+            {% if game.logo %}
+                <img src="{{ asset('uploads/games/' ~ game.logo) }}">
+            {% endif %}
+            <h3>{{ game.name }}</h3>
+            <p>{{ game.description }}</p>
+            {% if game.maxplayer %}
+                <p>Max Players: {{ game.maxplayer }}</p>
+            {% endif %}
+            {% if game.isRunning == 0 %}
+                <a href="{{ path('game_dashboard_game_start', {'gameId': game.id}) }}" class="button">{{ 'dashboard.game.start'|trans }}</a>
+            {% else %}
+                <a href="{{ path('game_dashboard_game_stop', {'gameId': game.id}) }}" class="button">{{ 'dashboard.game.stop'|trans }}</a>
+            {% endif %}
+        </div>
+    {% endfor %}
+            </div>
+    <div class="navigation">
+        {{ knp_pagination_render(pagination) }}
+    </div>
+    <br>
+{% endblock %}
+

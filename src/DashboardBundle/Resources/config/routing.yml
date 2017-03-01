@@ -1,0 +1,27 @@
+dashboard_homepage:
+    path:     /
+    defaults: { _controller: DashboardBundle:Default:index }
+
+game_dashboard_game_list:
+   path: game
+   defaults: { _controller: DashboardBundle:Game:index }
+
+game_dashboard_game_new:
+   path: game/create
+   defaults: { _controller: DashboardBundle:Game:create }
+
+game_dashboard_game_edit:
+   path: game/edit/{gameId}
+   defaults: { _controller: DashboardBundle:Game:edit }
+
+game_dashboard_game_start:
+   path: game/start/{gameId}
+   defaults: { _controller: DashboardBundle:Game:start }
+
+game_dashboard_game_stop:
+   path: game/stop/{gameId}
+   defaults: { _controller: DashboardBundle:Game:stop }
+
+game_dashboard_game_start_list:
+   path: game/start
+   defaults: { _controller: DashboardBundle:Game:startList }
